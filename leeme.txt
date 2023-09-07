@@ -1,0 +1,54 @@
+Cabecera:El presente trabajo pretende simular la necesidad de un negocio familiar pequeño, 
+un Pet Shop, que necesita, por un lado, organizar los turnos de la peluquería canina y 
+por otro llevar un control del stock y precios que se relacione con su sitio de e-commerce.
+
+################Potenciar Argentina#################
+            FullCoders: curso introductorio
+                           Comisión 13
+                                     Agosto 2023
+--------------------Proyecto: Pet Shop------------------------
+
+Alumna/o: Cristian Soplan – DNI 31776270
+Tutor/a: Paula R.
+--------------------------------------------------------------
+
+Algoritmo PetShop
+	Definir turnos, T Como Real
+	turnos <- 5
+	Escribir 'Turnos disponibles  ', turnos
+	Repetir
+		Escribir ' Solo disponemos de 5 turnos al dia , por favor seleccione un numero de 1 a 5 :'Sin Saltar
+		Leer T
+		Si T<=turnos Entonces
+			Escribir 'Se Registro su turno, fecha ********** ,Turnos Disponibles  ', turnos-T
+		SiNo
+			turnos <- turnos-T
+			Escribir 'Ya no disponemos de turnos vuelva mañana', turno
+		FinSi
+	Hasta Que turnos<=0
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Inventario
+	Escribir " Control de Stock PetShop La familia"
+	Escribir "Bienvenid@, Dijite la cantidad del articulo que ingresara " Sin Saltar;
+	Leer Cant1;
+	Escribir " Ahora dijiste el precio del articulo " Sin Saltar;
+	Leer Precio1;
+	Escribir  "Por favor digite la cantidad del articulo 2 " Sin Saltar;
+	Leer Cant2;
+	Escribir "Ahora dijite el precio del articulo 2 " Sin Saltar;
+	Leer Precio2;
+	Escribir "Digite la cantidad del articulo 3 " Sin Saltar;
+	Leer Cant3;
+	Escribir "Ahora el precio del articulo3 " Sin Saltar;
+	Leer Precio3;
+	Articulo1= Cant1 * Precio1;
+	Articulo2 = cant2 * Precio2;
+	Articulo3 = Cant3 *Precio3;
+	Total=Articulo1+Articulo2+Articulo3;
+	Escribir  " El total del inventario es : " Total ; 
+FinAlgoritmo
+--------------------------------------------------------------------------
+
+
